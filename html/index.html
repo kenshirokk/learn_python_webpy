@@ -1,4 +1,13 @@
 $def with(movies)
 <h1>this is a html page</h1>
+
+<form action="/" method="post">
+	<input type="text" name="title">
+	<input type="submit" value="搜索">
+</form>
+
 $for m in movies:
-	<li>$m["title"] ($m["year"]), $m["country"], $m["abstract"]</li>
+	<li>
+		<a href="/movie/$m.id">$m["title"] </a>
+		($m["year"]), $m["country"], $m["abstract"]
+	</li>

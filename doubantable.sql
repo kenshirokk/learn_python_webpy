@@ -1,0 +1,1 @@
+create table movie(id, title, original_title, alt, image, directors, casts, year);
